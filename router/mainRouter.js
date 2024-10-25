@@ -13,9 +13,20 @@ const getSignup = require("../controller/getSignUp")
 const adminRouter = require('./adminRouter')
 const userRouter = require('./userRouter')
 const productRouter = require('./productRouter')
+
+
+
 router.use('/admin',adminRouter)
 router.use('/user',userRouter)
 router.use('/product',productRouter)
+
+
+
+
+
+
+
+
 router.get('/signup',getSignup)
 router.get('/signin',getSignIn)
 router.post('/createUser',postCreateUser )
